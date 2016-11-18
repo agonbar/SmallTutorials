@@ -28,33 +28,33 @@ CREATE FIRST PROJECT
 --------------------
 
 ###The project
-We will create an empty folder, in *My Documents* for example. Open it and right click inside it, select *Open in Atom*.
+We will create an empty folder, in *My Documents* for example. Open it and right click inside it, select *Open in Atom* or open atom and select *File->Open...* and select that folder.
 
-To do a simple test that everything is ok, create a file with ctrl+n or in File->new and paste the code on the right, save it with ctrl+s
+To do a simple test that everything is ok, create a file with ctrl+n or in File->new and paste the code on the right of this text, save it with ctrl+s
 
 ``` javascript
 console.log("This code runs!");
 ```
 
 ###Running it
-In JavaScript the interface of the user is the HTML file, so for now let's use the console log as the way to show the data and run it with shift+ctrl+b.
+In JavaScript the interface of the user is the HTML file, so for now let's use the console log as the way to show the data. If you installed the script package, run this file with shift+ctrl+b. A windows will appear from the bottom with the text that we put inside the *console.log*.
 
 OUR FIRST FUNCTION AND VARIABLE
 -------------------------------
 
 ###Functions
-**Functions** are a resource to **organize and avoid duplication** of code, one of the basic tools with conditions and loops. In JavaScript functions have this shape, they have a name '*add*' and some input data '*x, y*'. Every line of code must end in **;** a common thing to let the machine know when we are finished doing an action.
+**Functions** are a resource to **organize and avoid duplication** of code, one of the basic tools with conditions and loops. In JavaScript functions have this shape, they have a name '*add*' and some input data '*x, y*'. Every action in code must end in **;** a common thing to let the machine know when we are finished doing an action.
 
 ``` javascript
 function add(x, y) {
   return x+y;
-}
+};
 
 console.log(add(3,4));
 ```
 
 ###Variables
-**Variables** are a way to **store the data** for later reuse, in most os the languages there's a need to define what kind of data is going to be store, a number, characters, etc. But in JavaScript this need doesn't exist, making it more flexible although harder to find errors.
+**Variables** are a way to **store the data** for later reuse, in most of the languages there's a need to define what kind of data is going to be stored, a number, characters, etc. But in JavaScript this need doesn't exist, making it more flexible although harder to find errors when we don't know where exactly is the problem.
 
 ``` javascript
 var res = 7;
@@ -67,7 +67,7 @@ Let's create our function, call it by it's name, store the result in a variable 
 ``` javascript
 function add(x, y) {
   return x+y;
-}
+};
 
 var res = add(3,4)
 console.log("The result is "+res);
@@ -76,7 +76,7 @@ console.log("The result is "+res);
 ###Reusability
 In order to improve code maintenance and reusability is always a good idea to store on the top of the code the *static* numbers, that way if later we need to change something we won't need to read all the code trying to find where this numbers are stored.
 
-Another good idea is to put comments on the code, specially before each function or a really complicated operation, this doesn't have any repercussions on the result, but really helps other people (and years-later-you) in reading and understanding the code.
+Another good idea is to put comments on the code, specially before each function or a really complicated operation, this doesn't have any repercussions on the result of the running code, but really helps other people (and years-later-you) in reading and understanding the code.
 
 ``` javascript
 //Here we store the numbers we'll use
@@ -92,10 +92,10 @@ var number2 = 3;
 */
 function add(x, y) {
   return x+y;
-}
+};
 
 //Call the function and store the result
-var res = add(number1, number2)
+var res = add(number1, number2);
 //Print the result
 console.log("The result is "+res);
 ```
