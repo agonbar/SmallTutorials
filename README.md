@@ -76,8 +76,6 @@ console.log("The result is "+res);
 ###Reusability
 In order to improve code maintenance and reusability is always a good idea to store on the top of the code the *static* numbers, that way if later we need to change something we won't need to read all the code trying to find where this numbers are stored.
 
-Another good idea is to put comments on the code, specially before each function or a really complicated operation, this doesn't have any repercussions on the result of the running code, but really helps other people (and years-later-you) in reading and understanding the code.
-
 ``` javascript
 //Here we store the numbers we'll use
 var number1 = 3.1418;
@@ -99,5 +97,7 @@ var res = add(number1, number2);
 //Print the result
 console.log("The result is "+res);
 ```
+
+Another good idea is to put comments on the code, specially before each function or a really complicated operation, this doesn't have any repercussions on the result of the running code, but really helps other people (and years-later-you) in reading and understanding the code.
 
 Notice the [format](http://usejsdoc.org/tags-returns.html) of the multiline code to describe the function, it uses this [format](http://usejsdoc.org/tags-param.html) to make it understandable by automatic documentation generators like [JSDoc](http://usejsdoc.org/index.html), commonly used in big projects to avoid wasting time in keeping the documentation updated. Not really necessary at this point, but a good habit to earn from the start.
